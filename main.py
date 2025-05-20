@@ -72,7 +72,6 @@ def winningmove(n,typ,opp):
         
       
 while True:
-  
   if " " not in grid[0] and " " not in grid[1] and " " not in grid[2]:
     printGrid(grid)
     print("Tie")
@@ -82,7 +81,7 @@ while True:
     printGrid(grid)
     j = int(input("Pick a row to play (0,2) "))
     f = int(input("Pick a column to play (0,2) "))
-    if grid[j][f] == " " and (j < 3 and f < 3):
+    if   (j < 3 and f < 3) and grid[j][f] == " ":
       grid[j][f] = "x"
       q = 2
     else:
@@ -93,6 +92,7 @@ while True:
       printGrid(grid)
       print("You win")
       break
+    printGrid(grid)
 #Computer turn
   else:
     winmov = False
