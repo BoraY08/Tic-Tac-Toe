@@ -30,6 +30,7 @@ def forkChecker(n,typ,chtyp,opp):
 
 
 def wincheck(n,typ):
+  for i in range(3):
   if n[0][0] == typ and n[0][1] == typ and n[0][2] == typ:
     return True
   if n[1][0] == typ and n[1][1] == typ and n[1][2] == typ:
