@@ -31,20 +31,10 @@ def forkChecker(n,typ,chtyp,opp):
 
 def wincheck(n,typ):
   for i in range(3):
-  if n[0][0] == typ and n[0][1] == typ and n[0][2] == typ:
-    return True
-  if n[1][0] == typ and n[1][1] == typ and n[1][2] == typ:
-    return True
-  if n[2][0] == typ and n[2][1] == typ and n[2][2] == typ:
-    return True
-  if n[0][0] == typ and n[1][0] == typ and n[2][0] == typ:
-    return True
-  if n[0][1] == typ and n[1][1] == typ and n[2][1] == typ:
-    return True
-  if n[0][2] == typ and n[1][2] == typ and n[2][2] == typ:
-    return True
-  if n[0][0] == typ and n[0][1] == typ and n[0][2] == typ:
-    return True
+    if (n[i][0] == typ and n[i][1] == typ and n[i][2] == typ):
+      return True
+    if (n[0][i] == typ and n[1][i] == typ and n[2][i] == typ):
+      return True
   if n[0][0] == typ and n[1][1] == typ and n[2][2] == typ:
     return True
   if n[0][2] == typ and n[1][1] == typ and n[2][0] == typ:
