@@ -14,7 +14,6 @@ if q == 2:
   print("Computer starts!")
 
 def forkChecker(n,typ,chtyp,opp):
-  
   for i in range(3):
     for j in range(3):
       if n[i][j] == " ":
@@ -116,6 +115,7 @@ while True:
       grid[1][1] = "o"
       q = 1
       winmov = True
+
     if winmov == False and grid[0][0] == " ":
       grid[0][0] = "o"
       q = 1
@@ -132,6 +132,7 @@ while True:
       grid[2][2] == "o"
       q=1
       winmov == True
+
     #random
     if winmov == False:
       x = random.randint(0,2)
